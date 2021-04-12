@@ -22,6 +22,7 @@ Outputs:
 <br/>
 &nbsp; NOTE: P_1 = P_2 and v_1 = v_2 this is always the case
 <br/>
+<br/>
 &nbsp; Shock Speeds: No shocks 
 <br/>
 &nbsp; Graphical solution:
