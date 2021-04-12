@@ -6,7 +6,7 @@ make all
 
 ./solver p_L P_L v_L p_R P_R v_R
 ```
-where L signifies the left state and R signifies the right state. It's important to note that this code is preset to deal with an adiabatic gas (gamma = 5/3) however this can easily be changed by changing the value of gamma and the sound speed formulas in the flow_variables.h file. 
+where L signifies the left state and R signifies the right state. Also p = density, P = pressure and v = velocity. It's important to note that this code is preset to deal with an adiabatic gas (gamma = 5/3) however this can easily be changed by changing the value of gamma and the sound speed formulas in the flow_variables.h file. 
 
 Below is an example of the programs output: 
 <br/>
@@ -18,7 +18,7 @@ Inputs:
 <br/>
 Outputs:
 <br/>
-&nbsp; Intermediate State: (p_1,P_1,v_1,p_2) = (0.424,0.0755,-0.895,0.368) [NOTE: P_1 = P_2 and v_1 = v_2 this is always the case.]
+&nbsp; Intermediate State: ( p_1, P_1, v_1, p_2 ) = ( 0.424, 0.0755, -0.895, 0.368 ) [NOTE: P_1 = P_2 and v_1 = v_2 this is always the case.]
 <br/>
 &nbsp; Shock Speeds: No shocks 
 <br/>
