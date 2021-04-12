@@ -25,6 +25,7 @@ Outputs:
 <br/>
 &nbsp; Shock Speeds: No shocks 
 <br/>
+<br/>
 &nbsp; Graphical solution:
   
   ![Sol 4](https://user-images.githubusercontent.com/60577496/114378234-e4556e80-9b5d-11eb-85c5-c2df8a6030a8.png)
