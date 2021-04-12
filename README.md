@@ -12,7 +12,7 @@ Below is an example of the programs output:
 <br/>
 Inputs:
 <br/>
-$\qquad$ Left State: ( p_L, P_L, v_L ) = ( 2.0, 1.0. -2.0 )
+&nbsp; Left State: ( p_L, P_L, v_L ) = ( 2.0, 1.0. -2.0 )
 <br/>
 $\qquad$ Right State: ( p_R, P_R, v_R ) = ( 1.0, 0.4, -0.2 )
 <br/>
