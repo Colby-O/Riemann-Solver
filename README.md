@@ -11,12 +11,17 @@ where L signifies the left state and R signifies the right state. It's important
 Below is an example of the programs output: 
 <br/>
 Inputs:
-  Left State: ( p_L, P_L, v_L ) = ( 2.0, 1.0. -2.0 )
+<br/>
+$emsp;  Left State: ( p_L, P_L, v_L ) = ( 2.0, 1.0. -2.0 )
+<br/>
   Right State: ( p_R, P_R, v_R ) = ( 1.0, 0.4, -0.2 )
+<br/>
 Outputs:
+<br/>
   Intermediate State: (p_1,P_1,v_1,p_2) = (0.424,0.0755,-0.895,0.368) [NOTE: P_1 = P_2 and v_1 = v_2 this is always the case.]
+<br/>
   Shock Speeds: No shocks
-  
+<br/>  
   Graphical solution:
   
   ![Sol 4](https://user-images.githubusercontent.com/60577496/114378234-e4556e80-9b5d-11eb-85c5-c2df8a6030a8.png)
