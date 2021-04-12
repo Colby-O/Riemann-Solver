@@ -14,15 +14,15 @@ Inputs:
 <br/>
 &nbsp; Left State: ( p_L, P_L, v_L ) = ( 2.0, 1.0. -2.0 )
 <br/>
-$\qquad$ Right State: ( p_R, P_R, v_R ) = ( 1.0, 0.4, -0.2 )
+&nbsp; Right State: ( p_R, P_R, v_R ) = ( 1.0, 0.4, -0.2 )
 <br/>
 Outputs:
 <br/>
-$\qquad$ Intermediate State: (p_1,P_1,v_1,p_2) = (0.424,0.0755,-0.895,0.368) [NOTE: P_1 = P_2 and v_1 = v_2 this is always the case.]
+&nbsp; Intermediate State: (p_1,P_1,v_1,p_2) = (0.424,0.0755,-0.895,0.368) [NOTE: P_1 = P_2 and v_1 = v_2 this is always the case.]
 <br/>
-$\qquad$ Shock Speeds: No shocks
+&nbsp; Shock Speeds: No shocks
 <br/>  
-  Graphical solution:
+&nbsp; Graphical solution:
   
   ![Sol 4](https://user-images.githubusercontent.com/60577496/114378234-e4556e80-9b5d-11eb-85c5-c2df8a6030a8.png)
   
