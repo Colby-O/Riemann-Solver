@@ -9,6 +9,7 @@ make all
 where L signifies the left state and R signifies the right state. It's important to note that this code is preset to deal with an adiabatic gas (gamma = 5/3) however this can easily be changed by changing the value of gamma and the sound speed formulas in the flow_variables.h file. 
 
 Below is an example of the programs output: 
+<\br>
 Inputs:
   Left State: ( p_L, P_L, v_L ) = ( 2.0, 1.0. -2.0 )
   Right State: ( p_R, P_R, v_R ) = ( 1.0, 0.4, -0.2 )
