@@ -2,6 +2,8 @@
 
 This program solves the 1D hydrodynamical Riemann problem given any inital state. For more infomation on the Riemann problem refer to the [wikipedia](https://en.wikipedia.org/wiki/Riemann_problem#:~:text=A%20Riemann%20problem%2C%20named%20after,in%20the%20domain%20of%20interest) page. To use this code the makefile should be ran and then program can be started in the terminal as follows 
 ```
+make all
+
 ./solver p_L P_L v_L p_R P_R v_R
 ```
 where L signifies the left state and R signifies the right state. It's important to note that this code is preset to deal with an adiabatic gas (gamma = 5/3) however this can easily be changed by changing the value of gamma and the sound speed formulas in the flow_variables.h file. 
