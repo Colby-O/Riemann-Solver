@@ -1,6 +1,6 @@
 # Riemann-Solver
 
-This program solves the 1D hydrodynamical Riemann problem given any inital state. For more infomation on the Riemann problem refer to the [wikipedia](https://en.wikipedia.org/wiki/Riemann_problem#:~:text=A%20Riemann%20problem%2C%20named%20after,in%20the%20domain%20of%20interest) page. To use this code the makefile should be ran and then program can be started in the terminal as follows 
+This program solves the 1D hydrodynamical Riemann problem given any inital state. For more infomation on the Riemann problem refer to the [wikipedia](https://en.wikipedia.org/wiki/Riemann_problem#:~:text=A%20Riemann%20problem%2C%20named%20after,in%20the%20domain%20of%20interest) page. To use this code the makefile should be ran and then the program can be started in the terminal as follows 
 ```
 make all
 
