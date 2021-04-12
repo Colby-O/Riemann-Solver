@@ -19,6 +19,7 @@ Inputs:
 Outputs:
 <br/>
 &nbsp; Intermediate State: ( p_1, P_1, v_1, p_2 ) = ( 0.424, 0.0755, -0.895, 0.368 ) 
+<br/>
 &nbsp; NOTE: P_1 = P_2 and v_1 = v_2 this is always the case
 <br/>
 &nbsp; Shock Speeds: No shocks 
