@@ -4,6 +4,8 @@
 #include "root_finder.h"
 #include "flow_variables.h"
 
+#define MAX_FLOAT 3.4028234664E+38
+
 #define MAX(a,b) ((a > b) ? a:b)
 
 double two_shock(double P)
@@ -59,6 +61,8 @@ double* riemannSolver(void)
 		p1 = g_pL*pow(C1,1/g_gamma);
 		p2 = g_pR*pow(C3,1/g_gamma);
 		v1 = g_vR - (g_cR/(g_alpha*g_gamma))*(1-pow(C3,g_alpha));
+		VL = MAX_FLOAT;
+	        VR = MAX_FLOAT; 	
 		g_states[0] = 'R';
 		g_states[1] = 'R';
 		return set_elements(intermediate_states,p1,P1,v1,p2,P1,v1,MAX_FLOAT,MAX_FLOAT); 
@@ -94,6 +98,7 @@ double* riemannSolver(void)
 				p2 = g_pR * ((1+ g_beta*C3)/(g_beta + C3));
 				v1 = g_vL + (g_cL/(g_alpha*g_gamma))*(1-pow(C1,g_alpha));
 				VR = g_vR + g_cR*sqrt(g_alpha*(1+g_beta*C3));
+				VL = MAX_FLOAT; 
 				g_states[0] = 'R';
 				g_states[1] = 'S';
 				return set_elements(intermediate_states,p1,P1,v1,p2,P1,v1,MAX_FLOAT,VR);
@@ -111,6 +116,7 @@ double* riemannSolver(void)
 					p2 =  g_pR*pow(C3,1/g_gamma);
 					v1 = g_vR - (g_cR/(g_alpha*g_gamma))*(1-pow(C3,g_alpha));
 					VL = g_vL - g_cL*sqrt(g_alpha*(1+g_beta*C1));
+					VR = MAX_FLOAT; 
 					g_states[0] = 'S';
 					g_states[1] = 'R';
 					return set_elements(intermediate_states,p1,P1,v1,p2,P1,v1,VL,MAX_FLOAT);
