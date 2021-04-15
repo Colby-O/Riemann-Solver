@@ -307,7 +307,7 @@ int main(int argc, char**argv)
   
         for (int i=0; i < NUM_POINTS; i++)
         {
-      		 fprintf(temp, "%lf %lf %lf %lf %lf \n", xt_vals[i],p_vals[i], P_vals[i],c_vals[i],v_vals[i]); //Write the data to a temporary file
+      		 fprintf(temp, "%lf %lf %lf %lf %lf \n",xt_vals[i],p_vals[i],P_vals[i],c_vals[i],v_vals[i]); //Write the data to a temporary file
       		 fflush(gnuplotPipe);
         }
 
@@ -318,5 +318,10 @@ int main(int argc, char**argv)
         }
 	
 	free(intermediate_states);
+	free(xt_vals);
+	free(p_vals);
+	free(P_vals);
+	free(v_vals);
+	free(c_vals);
 	return 0;
 }
