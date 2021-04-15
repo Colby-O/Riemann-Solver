@@ -124,6 +124,6 @@ double* riemannSolver(void)
 			}
 		}
 	}
-	printf("ERROR: NO FEASIBLE STATE FOUND!!!");
+	printf("ERROR: NO FEASIBLE STATE FOUND!!!\n");
 	exit(2);
 }
