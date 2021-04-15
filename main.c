@@ -291,7 +291,7 @@ int main(int argc, char**argv)
 	double c_min = MIN(MIN(g_cL,g_cR),MIN(sqrt(g_gamma*intermediate_states[1]/intermediate_states[0]),sqrt(g_gamma*intermediate_states[4]/intermediate_states[3])));
 
 	// sets up GNUplots  plotting commands  
-	char p_plot[100],P_plot[100],v_plot[100],c_plot[100];
+	char p_plot[200],P_plot[200],v_plot[200],c_plot[200];
 
 	double factor = 0.1; // factor that adds extra bit onto the y-axis from the max/min values
 

@@ -54,7 +54,7 @@ double* riemannSolver(void)
 	double P1,p1,p2,v1,VL,VR,C1,C3;
 	// Checks for 1,3-RF.
 	P1 = pow(((g_cL + g_cR + (g_gamma*g_alpha*(g_vL-g_vR)))/((g_cL*pow(g_PL,-g_alpha)) + (g_cR*pow(g_PR,-g_alpha)))),pow(g_alpha,-1));
-	if(g_PL > P1 && g_PR > P1)
+	if(g_PL > P1 && g_PR > P1 && P1 >= 0)
 	{
 		C1 = P1/g_PL;
 		C3 = P1/g_PR;
@@ -73,7 +73,7 @@ double* riemannSolver(void)
 	{
 		// Checks for 1,3-shock
 		P1 = secant(two_shock,0.0,MAX(g_PL,g_PR),100);
-		if(g_PL < P1 && g_PR < P1)
+		if(g_PL < P1 && g_PR < P1 && P1 >= 0 && P1 != MAX_FLOAT)
 		{
 			C1 = P1/g_PL;
 			C3 = P1/g_PR;
@@ -90,7 +90,7 @@ double* riemannSolver(void)
 		{
 			// checks for 1-RF, 3-shock
 			P1 = secant(RF_shock,0.0,MAX(g_PL,g_PR),100);
-			if(g_PL > P1 && P1 > g_PR)
+			if(g_PL > P1 && P1 > g_PR && P1 >= 0 && P1 != MAX_FLOAT)
 			{
 				C1 = P1/g_PL;
 				C3 = P1/g_PR;
@@ -108,7 +108,7 @@ double* riemannSolver(void)
 			{
                         	// checks for 1-shock, 3-RF
 				P1 = secant(shock_RF,0.0,MAX(g_PL,g_PR),100);
-				if(g_PL < P1 && P1 < g_PR)
+				if(g_PL < P1 && P1 < g_PR && P1 >= 0 && P1 != MAX_FLOAT)
 				{
 					C1 = P1/g_PL;
 					C3 = P1/g_PR;

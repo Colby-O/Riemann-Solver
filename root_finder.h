@@ -35,6 +35,6 @@ double secant(double(*f)(double),double x1, double x2, int MAX_ITER)
 		//printf("%f\n",f(i));
 		if(err < maxError){return x2;} 
 	}
-	printf("%s %d %s\n","ERROR: Failed to converge within", MAX_ITER,"iterations");
+	printf("WARNING: Failed to converge within %d iterations\n", MAX_ITER);
        	return MAX_FLOAT;	
 }
